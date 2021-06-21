@@ -7,8 +7,8 @@ async def start(bot, update):
         text="Its Just A Pyrogram Test Bot Of @Itsxrishna",
         reply_to_message_id=update.message_id
     )
-
-    @Client.on_message(filters.command(["rate"]))
+    
+@Client.on_message(filters.command(["rate"]))
 async def start(bot, update):
     await bot.forward_messages(
     chat_id=update.chat.id,
